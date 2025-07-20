@@ -24,6 +24,10 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  const handleStartGame = () => {
+    router.push(`/main/singleplayer`);
+  };
+
   return (
     <section className="p-8 text-center">
       <h1 className="text-3xl font-bold mb-4 text-[#133E87]">
