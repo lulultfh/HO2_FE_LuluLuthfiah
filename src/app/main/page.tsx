@@ -36,4 +36,10 @@ export default function TicTacToe() {
       setStatusMessage(`It's ${nextPlayer}'s turn!`);
     }
   };
+
+  const checkWinner = (state: string[]) => {
+    return winningConditions.some(([a, b, c]) => {
+      return state[a] && state[a] === state[b] && state[b] === state[c];
+    });
+  };
 }
