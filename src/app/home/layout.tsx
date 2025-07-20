@@ -71,7 +71,7 @@ export default function RootLayout({
             </div>
           </div>
         </nav>
-        <div className="pt-30">{children}</div>
+        <div className="flex items-center justify-center min-h-screen">{children}</div>
       </body>
     </html>
   );
