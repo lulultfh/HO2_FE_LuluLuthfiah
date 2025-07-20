@@ -17,4 +17,23 @@ export default function TicTacToe() {
     [0, 4, 8],
     [2, 4, 6],
   ];
+
+  const handleCellClick = (index: number) => {
+    if (!gameActive || gameState[index] !== "") return;
+    const newGameState = [...gameState];
+    newGameState[index] = currentPlayer;
+    setGameState(newGameState);
+
+    if (checkWinner(newGameState)) {
+      setStatusMessage(`Player ${currentPlayer} has won!`);
+      setGameActive(false);
+    } else if (newGameState.every((cell) => cell !== "")) {
+      setStatusMessage("Game ended in a draw!");
+      setGameActive(false);
+    } else {
+      const nextPlayer = currentPlayer === "X" ? "O" : "X";
+      setCurrentPlayer(nextPlayer);
+      setStatusMessage(`It's ${nextPlayer}'s turn!`);
+    }
+  };
 }
