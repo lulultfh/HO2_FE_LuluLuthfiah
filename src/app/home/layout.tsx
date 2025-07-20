@@ -71,7 +71,7 @@ export default function RootLayout({
             </div>
           </div>
         </nav>
-        <div className="pt-20">{children}</div>
+        <div className="pt-30">{children}</div>
       </body>
     </html>
   );
