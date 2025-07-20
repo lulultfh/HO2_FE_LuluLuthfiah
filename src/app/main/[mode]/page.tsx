@@ -22,6 +22,12 @@ export default function TicTacToe() {
     [2, 4, 6],
   ];
 
+  useEffect(() => {
+    if (gameMode) {
+      console.log(`Game Mode: ${gameMode}`);
+    }
+  }, [gameMode]);
+
   const handleCellClick = (index: number) => {
     if (!gameActive || gameState[index] !== "") return;
     const newGameState = [...gameState];
