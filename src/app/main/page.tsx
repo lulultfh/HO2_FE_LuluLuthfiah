@@ -49,4 +49,28 @@ export default function TicTacToe() {
     setGameActive(true);
     setStatusMessage("It's X's turn!");
   };
+
+  return (
+    <main className="flex flex-col items-center mt-10 gap-4">
+      <h1 className="text-3xl font-bold">A-ing Tic Tac Toe!</h1>
+      <div className="grid grid-cols-3 gap-2 w-48 h-48">
+        {gameState.map((cell, index) => (
+          <div
+            key={index}
+            className="cell border border-gray-400 flex items-center justify-center text-xl cursor-pointer"
+            onClick={() => handleCellClick(index)}
+          >
+            {cell}
+          </div>
+        ))}
+      </div>
+      <h3 className="text-lg">{statusMessage}</h3>
+      <button
+        onClick={handleRestartGame}
+        className="bg-blue-600 text-white px-4 py-2 rounded"
+      >
+        Restart Game
+      </button>
+    </main>
+  );
 }
