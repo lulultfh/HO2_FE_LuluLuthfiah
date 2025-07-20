@@ -1,3 +1,36 @@
+# A-ing TicTacToe
+
+# Struktur Folder
+```
+HO2_FE_LuluLuthfiah/
+├── .next/
+├── node_modules/
+├── public/
+│   └── images/
+│       ├── bg1.jpg
+│       ├── file.svg
+│       ├── globe.svg
+│       ├── next.svg
+│       ├── vercel.svg
+│       └── window.svg
+├── src/
+│   └── app/
+│       └── main/
+│           ├── page.tsx
+│           ├── favicon.ico
+│           ├── globals.css
+│           ├── layout.tsx
+│           └── page.tsx
+├── .gitignore
+├── .eslintrc.cjs
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.json
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
