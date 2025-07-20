@@ -58,15 +58,7 @@ export default function RootLayout({
                   >
                     Home
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="/about"
-                    className="block py-2 px-3 text-[#133E87] rounded-sm hover:bg-[#CBDCEB] md:hover:bg-transparent md:p-0 md:hover:text-[#608BC1]"
-                  >
-                    About
-                  </a>
-                </li>
+                </li>                
               </ul>
             </div>
           </div>
