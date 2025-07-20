@@ -51,7 +51,7 @@ export default function TicTacToe() {
   };
 
   return (
-      <main className="flex flex-col items-center mt-24 gap-6 bg-white border border-[#CBDCEB] rounded-lg p-8 mx-auto w-fit shadow-md">
+      <main className="flex flex-col items-center mt-24 gap-6 bg-[#F3F3E0] border border-[#CBDCEB] rounded-lg p-8 mx-auto w-fit shadow-md">
         <h1 className="text-3xl font-bold text-[#133E87]">A-ing Tic Tac Toe!</h1>
         <div className="grid grid-cols-3 gap-2 w-48 h-48">
           {gameState.map((cell, index) => (
