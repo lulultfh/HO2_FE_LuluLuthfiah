@@ -23,7 +23,7 @@ export default function RootLayout({
         <nav className="bg-[#F3F3E0] fixed w-full z-20 top-0 start-0 border--[#CBDCEB]">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a
-              href="/home"
+              href="/"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <img
@@ -52,7 +52,7 @@ export default function RootLayout({
               <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-[#CBDCEB] rounded-lg bg-[#CBDCEB] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-[#F3F3E0]">
                 <li>
                   <a
-                    href="/home"
+                    href="/"
                     className="block py-2 px-3 text-white bg-[#133E87] rounded-sm md:bg-transparent  md:p-0 md:text-[#133E87] md:hover:text-[#608BC1]"
                     aria-current="page"
                   >
