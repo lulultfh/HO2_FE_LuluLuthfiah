@@ -3,6 +3,9 @@ import { useState } from "react";
 import { useParams } from 'next/navigation';
 
 export default function TicTacToe() {
+  const params = useParams();
+  const gameMode = params.mode;
+
   const [gameActive, setGameActive] = useState(true);
   const [currentPlayer, setCurrentPlayer] = useState<"X" | "O">("X");
   const [gameState, setGameState] = useState<string[]>(Array(9).fill(""));
