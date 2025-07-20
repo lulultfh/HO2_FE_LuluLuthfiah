@@ -12,9 +12,13 @@ export default function Home(){
             setText(fullText.slice(0, currentIndex + 1));
             currentIndex++;
             if(currentIndex === fullText.length){
-                clearInterval(interval);
+                setTimeout(()=> {
+                    currentIndex = 0;
+                    setText('');
+                }, 1000);
+                // clearInterval(interval);
             }
-        }, 100);
+        }, 150);
         return () => clearInterval(interval);
     }, []);
 
