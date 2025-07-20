@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useParams } from 'next/navigation';
 
 export default function TicTacToe() {
   const [gameActive, setGameActive] = useState(true);
