@@ -23,7 +23,7 @@ export default function RootLayout({
         <nav className="bg-[#F3F3E0] fixed w-full z-20 top-0 start-0 border--[#CBDCEB]">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a
-              href="/"
+              href="/home"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <img
