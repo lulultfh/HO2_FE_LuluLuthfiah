@@ -1,4 +1,5 @@
 # A-ing TicTacToe
+<p>A-ing Tic Tac Toe adalah permainan sederhana berbasis web yang dirancang untuk memberikan pengalaman bermain yang menyenangkan dan interaktif. Dibangun menggunakan React dan Tailwind CSS, game ini menampilkan        antarmuka yang bersih dan responsif. Pemain dapat bergantian menempatkan simbol X dan O hingga salah satu menang atau permainan berakhir seri. Cocok dimainkan untuk mengisi waktu luang sekaligus melatih strategi        secara ringan.</p>
 
 # Struktur Folder
 ```
@@ -30,6 +31,7 @@ HO2_FE_LuluLuthfiah/
 ├── README.md
 └── tsconfig.json
 ```
+> this project was created for hands-on 2 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
