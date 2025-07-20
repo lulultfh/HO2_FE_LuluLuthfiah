@@ -42,4 +42,11 @@ export default function TicTacToe() {
       return state[a] && state[a] === state[b] && state[b] === state[c];
     });
   };
+
+  const handleRestartGame = () => {
+    setGameState(Array(9).fill(""));
+    setCurrentPlayer("X");
+    setGameActive(true);
+    setStatusMessage("It's X's turn!");
+  };
 }
