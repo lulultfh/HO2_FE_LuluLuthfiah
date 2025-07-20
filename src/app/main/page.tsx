@@ -51,26 +51,27 @@ export default function TicTacToe() {
   };
 
   return (
-    <main className="flex flex-col items-center mt-10 gap-4">
-      <h1 className="text-3xl font-bold">A-ing Tic Tac Toe!</h1>
-      <div className="grid grid-cols-3 gap-2 w-48 h-48">
-        {gameState.map((cell, index) => (
-          <div
-            key={index}
-            className="cell border border-gray-400 flex items-center justify-center text-xl cursor-pointer"
-            onClick={() => handleCellClick(index)}
-          >
-            {cell}
-          </div>
-        ))}
-      </div>
-      <h3 className="text-lg">{statusMessage}</h3>
-      <button
-        onClick={handleRestartGame}
-        className="bg-blue-600 text-white px-4 py-2 rounded"
-      >
-        Restart Game
-      </button>
-    </main>
+      <main className="flex flex-col items-center mt-24 gap-6 bg-white border border-[#CBDCEB] rounded-lg p-8 mx-auto w-fit shadow-md">
+        <h1 className="text-3xl font-bold text-[#133E87]">A-ing Tic Tac Toe!</h1>
+        <div className="grid grid-cols-3 gap-2 w-48 h-48">
+          {gameState.map((cell, index) => (
+            <div
+              key={index}
+              className="cell border border-[#CBDCEB] bg-[#CBDCEB] flex items-center justify-center text-xl cursor-pointer text-[#133E87] font-semibold"
+              onClick={() => handleCellClick(index)}
+            >
+              {cell}
+            </div>
+          ))}
+        </div>
+        <h3 className="text-lg text-[#133E87]">{statusMessage}</h3>
+        <button
+          onClick={handleRestartGame}
+          className="bg-[#133E87] hover:bg-[#608BC1] text-white px-4 py-2 rounded"
+        >
+          Restart Game
+        </button>
+      </main>
+    
   );
 }
