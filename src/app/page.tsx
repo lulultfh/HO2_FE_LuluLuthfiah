@@ -44,7 +44,7 @@ export default function Home() {
       </p>
       <button
         className="bg-[#133E87] mt-6 text-white px-6 py-2 rounded hover:bg-[#0f2e65] transition"
-        onClick={() => (window.location.href = "/main")}
+        onClick={handleStartGame}
       >
         🎮Coba Sekarang
       </button>
